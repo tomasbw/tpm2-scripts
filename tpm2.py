@@ -201,7 +201,7 @@ class UnknownAlgorithmIdError(Exception):
         self.alg = alg
 
     def __str__(self):
-        return '0x%0x' % (alg)
+        return '0x%0x' % (self.alg)
 
 
 class UnknownAlgorithmNameError(Exception):
@@ -209,7 +209,7 @@ class UnknownAlgorithmNameError(Exception):
         self.name = name
 
     def __str__(self):
-        return name
+        return self.name
 
 
 class UnknownPCRBankError(Exception):
@@ -217,7 +217,7 @@ class UnknownPCRBankError(Exception):
         self.alg = alg
 
     def __str__(self):
-        return '0x%0x' % (alg)
+        return '0x%0x' % (self.alg)
 
 
 class ProtocolError(Exception):
